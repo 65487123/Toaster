@@ -1,0 +1,21 @@
+module test {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:test";
+    prefix "hello";
+
+    revision "2015-01-05" {
+        description "Initial revision of test model";
+    }
+    rpc test-world {
+        input {
+            leaf name {
+                type string;
+            }
+        }
+        output {
+            leaf greeting {
+                type string;
+            }
+        }
+    }
+}
